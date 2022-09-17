@@ -1,0 +1,45 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.wrapper {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+// Header-specific flex
+#home-page .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+// Image connecting header to intro section
+.header-img {
+    position: relative;
+    img {
+        position: absolute;
+        right: 0;
+        // top: -72vh;
+        width: 56%;
+        bottom: -10vw;
+    }
+}
+
+// Smaller wrapper for intro section
+.intro-container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+// Remove default styling for ul
+ul {
+    @include horizontal-list;
+}

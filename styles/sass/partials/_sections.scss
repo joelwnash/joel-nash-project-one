@@ -1,0 +1,97 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+#intro {
+    background-color: $blue-grey;
+    padding: 14vw 0 14vw 0;
+}
+
+
+
+#news {
+    background-color: $spruce;
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 0;
+        li {
+            width: 43%;
+        }
+    }
+}
+
+#news div {
+    height: auto;
+}
+
+
+#icon-links {
+    background-color: $blue-grey;
+    padding: 100px 0;
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            width: 48%;
+        }
+    }
+}
+
+#icon-links .icon-link-container {
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+    &>:first-child {
+        width: 50px;
+        fill: $robin;
+        position: relative;
+        top: 14px;
+    }
+    &>:nth-child(2) {
+        margin-left: 20px;
+        width: calc(100% - 70px);
+    }
+}
+
+
+#profile {
+    background-color: $blue-grey;
+    .wrapper {
+        display: flex;
+        padding: 100px 0;
+        text-align: left;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.profile-image {
+    width: 24%;
+    box-shadow: 40px 40px $robin; 
+}
+
+.profile-text {
+    width: 66%;
+}
+
+#gallery {
+    background-color: $spruce;
+    padding: 100px 0;
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        li {
+            width: 32%;
+        }
+    }
+}
+
+
+
+
+

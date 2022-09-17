@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+footer {
+    background-color: $robin;
+    p {
+        color: $blue-grey;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+}

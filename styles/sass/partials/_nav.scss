@@ -1,0 +1,26 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+nav {
+    align-self: flex-start;
+    padding-top: 20px;
+}
+
+nav ul {
+    @include horizontal-list;
+    display: flex;
+    li {
+        padding-left: 60px;
+    }
+}
+
+nav a {
+    color: $white;
+    text-decoration: none;
+    @include base-heading (20px, 29px);
+    letter-spacing: 1px;
+    transition: 0.2s color;
+    &:hover, &:focus {
+        color: $robin;
+    }
+}

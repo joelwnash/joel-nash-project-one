@@ -1,0 +1,15 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+header {
+    @include bg-img;
+    &#home-page {
+        background-image: linear-gradient(to top, rgba($color: $blue-grey, $alpha: 0.5), rgba($color: $blue-grey, $alpha: 0.3)), url(../assets/header-image.jpg);
+    }
+    &#blog {
+        background-image: url(../assets/blog-header.jpg);
+    }
+    &#contact {
+        background-image: url(../assets/contact-header.jpg);
+    }
+}

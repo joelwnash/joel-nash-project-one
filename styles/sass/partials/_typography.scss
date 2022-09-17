@@ -1,0 +1,67 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+@font-face {
+    font-family: "Barlow";
+    src: url(../fonts/Barlow-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: normal;
+}
+
+html {
+    font-size: 125%;
+}
+
+h1 {
+    @include base-heading (138px, 126px);
+    width: 30%;
+    margin-top: 26vh;
+}
+
+h2 {
+    @include base-heading (80px, 92px);
+}
+
+h3 {
+    @include base-heading (42px, 40px);
+    letter-spacing: 1px;
+    margin: 0 0 26px 0;
+}
+
+h4 {
+    @include base-heading (32px, 36px);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: $body-font;
+    color: $white;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+a.light-button, a.dark-button {
+    @include base-heading (20px, 32px);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+a.light-button {
+    background-color: $robin;
+    padding: 14px 34px;
+    color: $blue-grey;
+}
+
+a.dark-button {
+    background-color: $blue-grey;
+    padding: 14px 20px;
+    color: $white;
+}

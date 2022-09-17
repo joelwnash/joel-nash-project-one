@@ -5,32 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under The Sea</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     
-    <header>
+    <header id="home-page">
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
             <h1>Under The Sea</h1>
-        </div>
+        </div> <!-- end of header wrapper -->
     </header>
 
-    <section class="header-img">
-        <img src="./assets/home-box-header.jpg" alt="">
-    </section>
+    <div class="header-img">
+        <img src="./assets/home-box-header.png" alt="Three golfish swimming in deep blue water">
+    </div>
 
-    
+    <section id="intro">
+        <div class="intro-container">
+            <h3>What Is Under The Sea?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit similique amet, ullam nemo repudiandae facilis quis molestiae mollitia exercitationem aut eaque aperiam corporis? Aut illo deserunt quam consectetur ab autem cupiditate, aperiam molestias sequi libero exercitationem alias accusantium iure quos earum distinctio! Sapiente, obcaecati.</p>
+            <a href="#" class="light-button">Find Out More</a>
+        </div> <!-- end of text block container -->
+    </section> <!-- end of intro section -->
 
+    <section id="news">
+        <ul>
+            <li>
+                <div>
+                    <img src="./assets/left-image.jpg" alt="A person looks into an aquarium of tropical fish">
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>New Additions</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et debitis rerum, ab quos facere ullam pariatur assumenda, id dolorum enim qui quasi sed sapiente minus!</p>
+                    <a href="#" class="dark-button">Read More</a>
+                </div> <!-- end of text block container -->
+            </li>
+            <li>
+                <div>
+                    <h4>Meet Real Nemo</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatem, debitis numquam id placeat esse totam nostrum, sed expedita officia cupiditate in aspernatur! Eum, velit.</p>
+                    <a href="#" class="dark-button">Read More</a>
+                </div> <!-- end of text block container -->
+            </li>
+            <li>
+                <div>
+                    <img src="./assets/right-image.jpg" alt="A clownfish swims in deep blue water">
+                </div>
+            </li>
+        </ul>
+    </section> <!-- end of news section -->
 
+    <section id="icon-links">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <a href="#" class="icon-link-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" fill="none"
+                        viewBox="0 0 40 40">
+                            <path class="st0" d="M20,0C9,0,0,9,0,20c0,11,9,20,20,20s20-9,20-20C40,9,31,0,20,0z M30.7,11.7L20.6,31.9c-0.8,1.6-3.1,1.1-3.2-0.7
+                            L17,23l-8.2-0.5c-1.7-0.1-2.2-2.4-0.7-3.2L28.3,9.3C29.8,8.7,31.3,10.2,30.7,11.7z"/>
+                        </svg>
+                        <div>
+                            <h4>Locations</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sit cupiditate veniam commodi exercitationem. Libero iure similique repellat illum deleniti.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" fill="none" viewBox="0 0 40 40">
+                            <path class="st0" d="M20,0C9,0,0,9,0,20c0,11,9,20,20,20s20-9,20-20C40,9,31,0,20,0z M29.3,14.7c1.9,0,3.5,1.6,3.5,3.5
+                            c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5C25.8,16.2,27.4,14.7,29.3,14.7z M20,11.4c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4
+                            c-2.4,0-4.4-2-4.4-4.4C15.6,13.3,17.6,11.4,20,11.4z M10.8,14.7c1.9,0,3.5,1.6,3.5,3.5c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5
+                            C7.3,16.2,8.9,14.7,10.8,14.7z M11,27.2c0,0.2-0.2,0.4-0.4,0.4H5.8c-0.4,0-0.5-1-0.5-2.1c0-1.1,0.3-1.8,1.2-2.5
+                            c0.5-0.4,1.3-0.3,1.9-0.1c0.6,0.2,1.2,0.3,1.8,0.4l0.3,0c0.3,0,0.6,0.3,0.6,0.6V27.2z M26.9,25.4v2.2c0,0.5-0.4,1-1,1H14.1
+                            c-0.5,0-1-0.4-1-1v-2.9c0-0.1,0-0.1,0-0.2c0-0.1,0-0.2,0-0.3c0-1.6,1.2-2.7,2.9-2.7c1.1,0.1,2.5,0.7,4,0.7c1.4,0,2.8-0.6,3.9-0.7
+                            c1.8-0.1,3.1,1.1,3.1,2.7C26.9,24.7,26.9,25.1,26.9,25.4z M34.2,27.6h-4.8c-0.2,0-0.4-0.2-0.4-0.4V24c0-0.3,0.2-0.6,0.6-0.6l0.3,0
+                            c0.6-0.1,1.2-0.2,1.8-0.4c0.5-0.2,1.3-0.4,1.9,0.1c0.9,0.7,1.2,1.4,1.2,2.5C34.7,26.6,34.6,27.6,34.2,27.6z"/>
+                        </svg>
+                        <div>
+                            <h4>Community</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sit cupiditate veniam commodi exercitationem. Libero iure similique repellat illum deleniti.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./blog.html" class="icon-link-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" fill="none" viewBox="0 0 40 40">
+                            <path class="st0" d="M20,0C9,0,0,9,0,20c0,11,9,20,20,20s20-9,20-20C40,9,31,0,20,0z M28.1,29.6c0,0.6-0.5,1.2-1.2,1.2H13.1
+                            c-0.6,0-1.2-0.5-1.2-1.2V10.4c0-0.6,0.5-1.2,1.2-1.2h8.2v6.8h6.8V29.6z M23.3,14.1V9.2l4.9,4.9H23.3z"/>
+                        </svg>
+                        <div>
+                            <h4>Blog</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sit cupiditate veniam commodi exercitationem. Libero iure similique repellat illum deleniti.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="icon-link-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" fill="none" viewBox="0 0 40 40">
+                            <path class="st0" d="M20,0C9,0,0,9,0,20c0,11,9,20,20,20s20-9,20-20C40,9,31,0,20,0z M12.7,29.4c-1.2,0-1.8-3-2-4.5
+                            c-0.1-0.5,0.2-0.9,0.6-1.1l3.8-1.6c0.4-0.2,1,0,1.2,0.4l0.9,1.3c0.3,0.4,0.9,0.6,1.4,0.3c2.2-1.4,4.1-3.2,5.4-5.4
+                            c0.3-0.5,0.2-1.1-0.3-1.4l-1.4-1C22,16,21.8,15.5,22,15.1l1.6-3.8c0.2-0.4,0.6-0.7,1.1-0.6c1.5,0.2,4.7,0.8,4.7,2.1
+                            C29.3,21.9,21.9,29.4,12.7,29.4z"/>
+                        </svg>
+                        <div>
+                            <h4>Get In Touch</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sit cupiditate veniam commodi exercitationem. Libero iure similique repellat illum deleniti.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div> <!-- end of icon links section wrapper -->
+    </section> <!-- end of icon links section -->
 
+    <section id="profile">
+        <img src="./assets/banner.jpg" alt="A person watches a whale shark swimming in an aquarium">
+        <div class="wrapper">
+            <div class="profile-image">
+                <img src="./assets/small-box.jpg" alt="A school of fish swimming">
+            </div>
+            <div class="profile-text">
+                <h3>This Month Profile</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed unde illum dolor. Recusandae aliquam dicta facilis quaerat eligendi non, dolorum nulla placeat ipsam eaque natus ullam fugit odio sunt voluptatum ratione, perferendis officia a perspiciatis. Consequuntur laboriosam asperiores, hic quo provident iure beatae veritatis exercitationem placeat modi illum esse rerum aperiam iste quidem sequi dolor? Rerum ea qui cumque explicabo magni, autem sequi illum ex id nostrum dolorem amet?</p><a href="#" class="light-button">Find Out More</a>
+            </div>
+        </div> <!-- end of month profile section wrapper -->
+    </section> <!-- end of month profile section -->
 
+    <section id="gallery">
+        <div class="wrapper">
+            <ul>
+                <li><img src="./assets/gallery-image-1.jpg" alt="A child puts their hand on the window of an aquarium, looking into it"></li>
+                <li><img src="./assets/gallery-image-2.jpg" alt="A whale shark in an aquarium swims past a group of onlookers watching and taking pictures"></li>
+                <li><img src="./assets/gallery-image-3.jpg" alt="Several groups of tropical fish swim in an aquarium"></li>
+            </ul>
+        </div> <!-- end of gallery section wrapper -->
+    </section> <!-- end of gallery section -->
+
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
 
 
 </body>
