@@ -4,7 +4,7 @@
 header {
     @include bg-img;
     &#home-page {
-        background-image: linear-gradient(to top, rgba($color: $blue-grey, $alpha: 0.5), rgba($color: $blue-grey, $alpha: 0.3)), url(../assets/header-image.jpg);
+        background-image: linear-gradient(to top, rgba($color: $blue-grey, $alpha: 0.4), rgba($color: $blue-grey, $alpha: 0.6)), url(../assets/header-image.jpg);
     }
     &#blog {
         background-image: url(../assets/blog-header.jpg);

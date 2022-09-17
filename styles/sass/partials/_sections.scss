@@ -1,15 +1,17 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+// Intro section
 #intro {
     background-color: $blue-grey;
     padding: 14vw 0 14vw 0;
 }
 
 
-
+// News section
 #news {
     background-color: $spruce;
+    position: relative;
     ul {
         display: flex;
         flex-flow: row wrap;
@@ -17,15 +19,56 @@
         margin-top: 0;
         li {
             width: 43%;
+            display: flex;
+            align-items: center;
         }
     }
 }
 
-#news div {
-    height: auto;
+.news-image-1 {
+    position: relative;
+    align-self: normal;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    img {
+        @include positioned-image;
+        box-shadow: 40px 40px $robin; 
+    }
 }
 
+.news-text-1 {
+    margin-bottom: 40px;
+    padding: 10% auto;
+    max-width: calc(1500px*0.43);
+    padding-right: 10%;
+}
 
+.news-text-2 {
+    margin-bottom: 40px;
+    padding: 10% auto;
+    text-align: right;
+    max-width: calc(1500px*0.43);
+    margin-left: auto;
+    padding-left: 10%;
+    p {
+        text-align: right;
+    }
+}
+
+.news-image-2 {
+    position: relative;
+    align-self: normal;
+    right: 0;
+    bottom: -40px;
+    width: 100%;
+    img {
+        @include positioned-image;
+        box-shadow: -40px 40px $robin; 
+    }
+}
+
+// Icon links section
 #icon-links {
     background-color: $blue-grey;
     padding: 100px 0;
@@ -56,7 +99,22 @@
     }
 }
 
+a.icon-link-container:hover, a.icon-link-container:focus {
+    svg {
+        animation: bounce 0.8s ease normal;
+    }
+    h4, p {
+        color: $robin;
+    }
+}
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+}
+
+// Profile section
 #profile {
     background-color: $blue-grey;
     .wrapper {
@@ -78,6 +136,7 @@
     width: 66%;
 }
 
+// Gallery section
 #gallery {
     background-color: $spruce;
     padding: 100px 0;

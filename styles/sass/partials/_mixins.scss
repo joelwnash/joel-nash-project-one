@@ -7,7 +7,7 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
+    background-blend-mode: luminosity;
 }
 
 // Remove default ul styling
@@ -36,4 +36,10 @@
     color: $white;
     font-size: $font-sizing;
     line-height: $line-height;
+}
+
+// Base code for positioned images
+@mixin positioned-image {
+    object-fit: cover;
+    height: 100%;
 }

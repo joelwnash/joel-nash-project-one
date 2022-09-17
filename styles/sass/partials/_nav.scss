@@ -19,8 +19,14 @@ nav a {
     text-decoration: none;
     @include base-heading (20px, 29px);
     letter-spacing: 1px;
-    transition: 0.2s color;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0px;
+    transition: 0.2s all;
     &:hover, &:focus {
+        border-bottom: 2px solid $robin;
+        padding-bottom: 6px;
+    }
+    &.active {
         color: $robin;
     }
 }
