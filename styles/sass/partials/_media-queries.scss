@@ -1,0 +1,233 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// Laptop sizing - 1200px
+
+@media (max-width: 1200px) {
+    
+    // General styling
+    input {
+        width: 100%;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+// Tablet landscape sizing - 1024px
+
+@media (max-width: 1024px) {
+    
+    // General styling
+    #contact-section, #blog-section {
+        flex-flow: column-reverse;
+    }
+    aside {
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+    input {
+        width: 48%;
+    }
+    h5 {
+        margin-top: 0;
+    }
+
+    // Blog-specific styling
+    aside {
+        background-color: $spruce;
+        margin: 40px 40px 40px 80px;
+        padding: 0 0 40px 0;
+        width: calc(100% - 120px);
+    }
+    .aside-image {
+        position: relative;
+        top: -40px;
+        transform: translateX(-40px);
+    }
+    .aside-container {
+        margin: 0;
+        padding: 0 10%;
+    }
+    .visible-list li {
+        font-size: 0.9rem;
+    }
+    
+    .blog-post-container {
+        width: 100%;
+    }
+    article {
+        margin: 0 40px;
+    }
+    .article-container {
+        margin-right: 0;
+        padding: 100px 10% 0;
+        max-width: 100%;
+    }
+    .comment-container {
+        margin-right: 0;
+        padding: 20px 10% 0;
+        max-width: 100%;
+    }
+    .profile-picture {
+        width: 18%;
+    }
+    .individual-comment p:nth-child(2) {
+        margin-bottom: 0;
+    }
+    form {
+        max-width: 100%;
+        margin-right: 0;
+        padding: 0 10%;
+    }
+
+    // Contact-specific styling
+    #contact-section aside {
+        padding: 40px 0 60px;
+    }
+    nav.nav-container {
+        margin-left: 0;
+        flex-flow: row;
+        justify-content: center;
+    }
+    .contact-links {
+        padding-right: 40px;
+        text-align: right;
+    }
+    .social-links i {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    .address {
+        padding-left: 40px;
+        border-left: 4px solid $robin;
+    }
+    .contact-container {
+        width: 100%;
+    }
+    .contact-container form {
+        margin: 0 40px 40px 80px;
+    }
+}
+
+
+
+// Tablet sizing - 768px
+
+@media (max-width: 768px) {
+    
+    // General styling
+    .blog-wrapper, .contact-wrapper {
+        justify-content: center;
+    }
+    .navbar ul li {
+        padding-left: 30px;
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+    h2 {
+        font-size: 3.4rem;
+        padding: 0 30px;
+        line-height: 3.4rem;
+    }
+    input {
+        width: 100%;
+    }
+
+    // Blog-specific styling
+    article {
+        margin: 0;
+    }
+    .blog-post-image {
+        margin-left: 0;
+        img {
+            box-shadow: 0 40px $robin;
+        }
+    }
+    .article-container {
+        border-left: none;
+    }
+
+    // Contact-specific styling
+    .contact-container form {
+        margin: 0;
+        box-shadow: 0 40px $robin;
+    }
+    #contact-section aside {
+        padding: 60px 0;
+    }
+    nav.nav-container {
+        flex-direction: column;
+    }
+    .contact-links {
+        padding-right: 0;
+        text-align: center;
+    }
+    .address {
+        padding-left: 0;
+        border-left: none;
+        p {
+            text-align: center;
+        }
+    }
+}
+
+
+
+// Large mobile sizing - 480px
+
+@media (max-width: 480px) {
+    
+    // General styling
+    .navbar ul li {
+        padding-left: 18px;
+    }
+
+    // Blog-specific styling
+    aside {
+        margin: 0;
+        width: 100%;
+    }
+    .aside-image {
+        transform: translateX(0);
+        top: 0;
+        margin-bottom: 30px;
+    }
+    .aside-container {
+        padding: 0 30px;
+    }
+    .article-container {
+        padding: 70px 30px 0 30px;
+    }
+    .comment-container {
+        padding: 0 30px;
+    }
+    .comment {
+        flex-direction: column;
+    }
+    .profile-picture {
+        width: 36%;
+    }
+    .individual-comment {
+        width: 100%;
+        padding-left: 0;
+    }
+    form {
+        padding: 0 30px;
+    }
+
+    // Contact-specific styling
+    .contact-container form {
+        padding: 30px;
+    }
+}
+
+
+
+// Mobile sizing - 360px

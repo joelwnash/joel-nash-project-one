@@ -40,7 +40,6 @@ nav.nav-container {
         text-decoration: none;
         @include base-heading (28px, 29px);
         letter-spacing: 1px;
-        margin-bottom: 24px;
         transition: 0.2s color;
         &:hover, &:focus {
             color: $robin;
@@ -48,8 +47,12 @@ nav.nav-container {
     }
 }
 
-.social-links {
+.contact-links {
     margin-bottom: 20px;
+}
+
+.social-links {
+    margin-bottom: 18px;
     i {
         font-size: 24px;
         padding-right: 20px;

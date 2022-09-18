@@ -491,7 +491,6 @@ nav.nav-container a {
   font-size: 28px;
   line-height: 29px;
   letter-spacing: 1px;
-  margin-bottom: 24px;
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
 }
@@ -499,8 +498,12 @@ nav.nav-container a:hover, nav.nav-container a:focus {
   color: #86E0F9;
 }
 
-.social-links {
+.contact-links {
   margin-bottom: 20px;
+}
+
+.social-links {
+  margin-bottom: 18px;
 }
 .social-links i {
   font-size: 24px;
@@ -1003,4 +1006,213 @@ input[type=submit]:focus-visible {
   margin: 0 40px 40px 40px;
   -webkit-box-shadow: -40px 40px #86E0F9;
           box-shadow: -40px 40px #86E0F9;
+}
+
+@media (max-width: 1200px) {
+  input {
+    width: 100%;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1024px) {
+  #contact-section, #blog-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+  aside {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+  input {
+    width: 48%;
+  }
+  h5 {
+    margin-top: 0;
+  }
+  aside {
+    background-color: #0F614E;
+    margin: 40px 40px 40px 80px;
+    padding: 0 0 40px 0;
+    width: calc(100% - 120px);
+  }
+  .aside-image {
+    position: relative;
+    top: -40px;
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  .aside-container {
+    margin: 0;
+    padding: 0 10%;
+  }
+  .visible-list li {
+    font-size: 0.9rem;
+  }
+  .blog-post-container {
+    width: 100%;
+  }
+  article {
+    margin: 0 40px;
+  }
+  .article-container {
+    margin-right: 0;
+    padding: 100px 10% 0;
+    max-width: 100%;
+  }
+  .comment-container {
+    margin-right: 0;
+    padding: 20px 10% 0;
+    max-width: 100%;
+  }
+  .profile-picture {
+    width: 18%;
+  }
+  .individual-comment p:nth-child(2) {
+    margin-bottom: 0;
+  }
+  form {
+    max-width: 100%;
+    margin-right: 0;
+    padding: 0 10%;
+  }
+  #contact-section aside {
+    padding: 40px 0 60px;
+  }
+  nav.nav-container {
+    margin-left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-links {
+    padding-right: 40px;
+    text-align: right;
+  }
+  .social-links i {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .address {
+    padding-left: 40px;
+    border-left: 4px solid #86E0F9;
+  }
+  .contact-container {
+    width: 100%;
+  }
+  .contact-container form {
+    margin: 0 40px 40px 80px;
+  }
+}
+@media (max-width: 768px) {
+  .blog-wrapper, .contact-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar ul li {
+    padding-left: 30px;
+  }
+  .navbar ul li:first-child {
+    padding-left: 0;
+  }
+  h2 {
+    font-size: 3.4rem;
+    padding: 0 30px;
+    line-height: 3.4rem;
+  }
+  input {
+    width: 100%;
+  }
+  article {
+    margin: 0;
+  }
+  .blog-post-image {
+    margin-left: 0;
+  }
+  .blog-post-image img {
+    -webkit-box-shadow: 0 40px #86E0F9;
+            box-shadow: 0 40px #86E0F9;
+  }
+  .article-container {
+    border-left: none;
+  }
+  .contact-container form {
+    margin: 0;
+    -webkit-box-shadow: 0 40px #86E0F9;
+            box-shadow: 0 40px #86E0F9;
+  }
+  #contact-section aside {
+    padding: 60px 0;
+  }
+  nav.nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-links {
+    padding-right: 0;
+    text-align: center;
+  }
+  .address {
+    padding-left: 0;
+    border-left: none;
+  }
+  .address p {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .navbar ul li {
+    padding-left: 18px;
+  }
+  aside {
+    margin: 0;
+    width: 100%;
+  }
+  .aside-image {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    top: 0;
+    margin-bottom: 30px;
+  }
+  .aside-container {
+    padding: 0 30px;
+  }
+  .article-container {
+    padding: 70px 30px 0 30px;
+  }
+  .comment-container {
+    padding: 0 30px;
+  }
+  .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile-picture {
+    width: 36%;
+  }
+  .individual-comment {
+    width: 100%;
+    padding-left: 0;
+  }
+  form {
+    padding: 0 30px;
+  }
+  .contact-container form {
+    padding: 30px;
+  }
 }
