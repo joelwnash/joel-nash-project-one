@@ -428,11 +428,11 @@ header#contact {
           justify-content: space-between;
 }
 
-nav {
+.navbar {
   padding-top: 20px;
 }
 
-nav ul {
+.navbar ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -440,14 +440,14 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
 }
-nav ul li {
+.navbar ul li {
   display: inline-block;
 }
-nav ul li {
+.navbar ul li {
   padding-left: 60px;
 }
 
-nav a {
+.navbar a {
   color: #FFFFFF;
   text-decoration: none;
   font-family: "Barlow";
@@ -461,12 +461,71 @@ nav a {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
-nav a:hover, nav a:focus {
+.navbar a:hover, .navbar a:focus {
   border-bottom: 2px solid #86E0F9;
   padding-bottom: 6px;
 }
-nav a.active {
+.navbar a.active {
   color: #86E0F9;
+}
+
+nav.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20%;
+}
+nav.nav-container a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Barlow";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 29px;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+nav.nav-container a:hover, nav.nav-container a:focus {
+  color: #86E0F9;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+.social-links i {
+  font-size: 24px;
+  padding-right: 20px;
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+.social-links i:hover, .social-links i:focus {
+  color: #86E0F9;
+}
+
+.address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.address p {
+  margin: -2px 0;
 }
 
 #intro {
@@ -896,6 +955,9 @@ input[type=submit] {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
+input[type=submit].contact-form {
+  background-color: #0C1423;
+}
 
 input[type=submit]:hover, input[type=submit]:focus {
   -webkit-box-shadow: 10px 10px #86E0F9;
@@ -903,7 +965,42 @@ input[type=submit]:hover, input[type=submit]:focus {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
+input[type=submit]:hover.contact-form, input[type=submit]:focus.contact-form {
+  -webkit-box-shadow: -10px 10px #86E0F9;
+          box-shadow: -10px 10px #86E0F9;
+}
 
 input[type=submit]:focus-visible {
   outline: 4px solid #86E0F9;
+}
+
+#contact-section {
+  background-color: #0C1423;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#contact-section aside {
+  padding: 100px 0;
+}
+
+.contact-container {
+  width: 63%;
+  -webkit-transform: translateY(-40vh);
+          transform: translateY(-40vh);
+  margin-bottom: -36vh;
+}
+.contact-container form {
+  background-color: #0F614E;
+  padding: 60px;
+  margin: 0 40px 40px 40px;
+  -webkit-box-shadow: -40px 40px #86E0F9;
+          box-shadow: -40px 40px #86E0F9;
 }

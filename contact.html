@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Under The Sea</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/98b45b7b0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header id="contact">
         <div class="wrapper contact-wrapper">
-            <nav>
+            <nav class="navbar">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -22,18 +23,49 @@
         </div> <!-- end of header wrapper -->
     </header>
 
-    <form action="submit">
-        <fieldset>
-            <legend class="sr-only">Enter your name and email and write a comment</legend>
-            <label for="name" class="sr-only">Enter your name</label>
-            <input type="text" id="name" name="name" placeholder="Name">
-            <label for="email" class="sr-only">Enter your email address</label>
-            <input type="text" id="email" name="email" placeholder="Email address">
-            <label for="user-comments" class="sr-only">Enter your comments</label>
-            <textarea name="comment" id="user-comments" placeholder="Comment"></textarea>
-            <input type="submit" value="Post Comment">
-        </fieldset>
-    </form>
+    <section id="contact-section">
+        <aside>
+            <nav class="nav-container">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+                <a href="#">info@email.com</a>
+                <ul class="address">
+                    <li>
+                        <p>123-456-7890</p>
+                    </li>
+                    <li>
+                        <p>123 Queen Street West, Unit 10</p>
+                    </li>
+                    <li>
+                        <p>Toronto, Ontario</p>
+                    </li>
+                    <li>
+                        <p>M5V2D5</p>
+                    </li>
+                </ul> 
+            </nav> <!-- End of nav-container -->
+        </aside>
+        
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <form action="submit">
+                <fieldset>
+                    <legend class="sr-only">Enter your name and email and write a comment</legend>
+                    <label for="name" class="sr-only">Enter your name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <label for="email" class="sr-only">Enter your email address</label>
+                    <input type="text" id="email" name="email" placeholder="Email address">
+                    <label for="user-comments" class="sr-only">Enter your comments</label>
+                    <textarea name="comment" id="user-comments" placeholder="Comment"></textarea>
+                    <input type="submit" value="Post Comment" class="contact-form">
+                </fieldset>
+            </form>
+        </div>
+    </section>
     
     <footer>
         <p>Copyright © 2018 HackerYou</p>

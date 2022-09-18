@@ -1,3 +1,25 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+
+#contact-section {
+    background-color: $blue-grey;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    aside {
+        padding: 100px 0;
+    }
+}
+
+.contact-container {
+    width: 63%;
+    transform: translateY(-40vh);
+    margin-bottom: -36vh;
+    form {
+        background-color: $spruce;
+        padding: 60px;
+        margin: 0 40px 40px 40px;
+        box-shadow: -40px 40px $robin;
+    }
+}

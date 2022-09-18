@@ -1,11 +1,11 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-nav {
+.navbar {
     padding-top: 20px;
 }
 
-nav ul {
+.navbar ul {
     @include horizontal-list;
     display: flex;
     li {
@@ -13,7 +13,7 @@ nav ul {
     }
 }
 
-nav a {
+.navbar a {
     color: $white;
     text-decoration: none;
     @include base-heading (20px, 29px);
@@ -27,5 +27,44 @@ nav a {
     }
     &.active {
         color: $robin;
+    }
+}
+
+nav.nav-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: 20%;
+    a {
+        color: $white;
+        text-decoration: none;
+        @include base-heading (28px, 29px);
+        letter-spacing: 1px;
+        margin-bottom: 24px;
+        transition: 0.2s color;
+        &:hover, &:focus {
+            color: $robin;
+        }
+    }
+}
+
+.social-links {
+    margin-bottom: 20px;
+    i {
+        font-size: 24px;
+        padding-right: 20px;
+        transition: 0.2s color;
+        &:hover, &:focus {
+            color: $robin;
+        }
+    }
+}
+
+.address {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    p {
+        margin: -2px 0;
     }
 }

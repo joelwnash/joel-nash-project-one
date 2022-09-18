@@ -71,11 +71,17 @@ input[type=submit] {
     width: 100%;
     text-align: center;
     transition: all 0.1s;
+    &.contact-form {
+        background-color: $blue-grey;
+    }
 }
 
 input[type=submit]:hover, input[type=submit]:focus {
     box-shadow: 10px 10px $robin;
-    transform: scale(0.98); 
+    transform: scale(0.98);
+    &.contact-form {
+        box-shadow: -10px 10px $robin;
+    } 
 }
 
 input[type=submit]:focus-visible {
