@@ -2,14 +2,29 @@
 @use "mixins" as *;
 
 header {
-    @include bg-img;
     &#home-page {
+        @include bg-img(100);
         background-image: linear-gradient(to top, rgba($color: $blue-grey, $alpha: 0.4), rgba($color: $blue-grey, $alpha: 0.6)), url(../assets/header-image.jpg);
     }
     &#blog {
+        @include bg-img(75);
         background-image: url(../assets/blog-header.jpg);
     }
     &#contact {
+        @include bg-img(75);
         background-image: url(../assets/contact-header.jpg);
     }
+}
+
+// Header-specific flex
+#home-page .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.blog-wrapper, .contact-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }

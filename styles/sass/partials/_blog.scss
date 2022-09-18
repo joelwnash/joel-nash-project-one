@@ -1,0 +1,89 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+#blog-section {
+    background-color: $blue-grey;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+aside {
+    width: calc(100% / 3);
+    padding-top: 100px;
+    position: relative;
+}
+
+.aside-image {
+    position: absolute;
+    right: 20px;
+    left: 0;
+    top: 80px;
+}
+
+.aside-container {
+    padding: 25vw 40px 30px 16px;
+    background-color: $spruce;
+    margin-left: 20%;
+}
+
+.visible-list {
+    list-style-type: disc;
+    color: $white;
+    font-family: $body-font;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 20px;
+    li {
+        display: revert;
+        padding-left: 8px;
+        padding-bottom: 10px;
+    }
+}
+
+.blog-post-container {
+    width: 63%;
+    transform: translateY(-40vh);
+    margin-bottom: -36vh;
+}
+
+.blog-post-image {
+    margin-left: 40px;
+    img {
+        box-shadow: -40px 40px $robin;
+    }
+}
+
+.article-container {
+    padding: 100px 0 0 60px;
+    border-left: 4px solid $robin;
+    border-bottom: 4px solid $robin;
+    max-width: calc(1500px * 0.63);
+    margin-right: 10%;
+}
+
+.comment-container {
+    padding: 20px 0 0 40px;
+    max-width: calc(1500px * 0.63);
+    margin-right: 10%;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    margin-top: 26px;
+    width: 12%;
+}
+
+.individual-comment {
+    width: 88%;
+    padding-left: 28px;
+    :first-child {
+        margin-bottom: -10px;
+    }
+}

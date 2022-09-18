@@ -2,7 +2,6 @@
 @use "mixins" as *;
 
 nav {
-    align-self: flex-start;
     padding-top: 20px;
 }
 
@@ -20,7 +19,7 @@ nav a {
     @include base-heading (20px, 29px);
     letter-spacing: 1px;
     border-bottom: 2px solid transparent;
-    padding-bottom: 0px;
+    padding-bottom: 2px;
     transition: 0.2s all;
     &:hover, &:focus {
         border-bottom: 2px solid $robin;

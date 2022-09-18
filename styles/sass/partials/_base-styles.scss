@@ -12,20 +12,12 @@ img {
     display: block;
 }
 
-// Header-specific flex
-#home-page .wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
 // Image connecting header to intro section
 .header-img {
     position: relative;
     img {
         position: absolute;
         right: 0;
-        // top: -72vh;
         width: 56%;
         bottom: -10vw;
     }

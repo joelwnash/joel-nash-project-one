@@ -1,9 +1,9 @@
 @use "variables" as *;
 
 // Set up background image settings
-@mixin bg-img {
+@mixin bg-img($header-height) {
     width: 100%;
-    height: 100vh;
+    height: calc(1vh * $header-height);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,10 +22,6 @@
     @include reset-list;
     li {
       display: inline-block;
-      // margin: {
-      //   left: -2px;
-      //   right: 2em;
-      // }
     }
   }
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Under The Sea</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <header id="contact">
+        <div class="wrapper contact-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end of header wrapper -->
+    </header>
+
+    <form action="submit">
+        <fieldset>
+            <legend class="sr-only">Enter your name and email and write a comment</legend>
+            <label for="name" class="sr-only">Enter your name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <label for="email" class="sr-only">Enter your email address</label>
+            <input type="text" id="email" name="email" placeholder="Email address">
+            <label for="user-comments" class="sr-only">Enter your comments</label>
+            <textarea name="comment" id="user-comments" placeholder="Comment"></textarea>
+            <input type="submit" value="Post Comment">
+        </fieldset>
+    </form>
+    
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
+
+</body>
+</html>

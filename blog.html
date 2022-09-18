@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Under The Sea</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <header id="blog">
+        <div class="wrapper blog-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html" class="active">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end of header wrapper -->
+    </header>
+
+    <section id="blog-section">
+        <aside>
+            <div class="aside-image">
+                <img src="./assets/side-blog-image.jpg" alt="A whale shark in an aquarium swims past a group of onlookers">
+            </div>
+            <div class="aside-container">
+                <h5>About Under The Sea</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod voluptatibus laboriosam perspiciatis labore hic non reiciendis, alias deleniti cumque.</p>
+                <h5>Recent Posts</h5>
+                    <ul class="visible-list">
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>In, perspiciatis assumenda! Consequatur?</li>
+                        <li>Assumenda rem deserunt est!</li>
+                        <li>Minima accusantium dolorum inventore?</li>
+                    </ul>
+            </div> <!-- End of aside text container-->
+        </aside> <!-- End of aside -->
+        
+        <div class="blog-post-container">
+            <h2>Blog</h2>
+            <article>
+                <div class="blog-post-image">
+                    <img src="./assets/blog-post-image.jpg" alt="Tropical fish swim among anemones">
+                </div>
+                <div class="article-container">
+                    <h3>Discovering New Species</h3>
+                    <p>Monday May 4th, 2019 by Dieula</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum, dignissimos suscipit magnam nemo velit officia odit! Quae natus nemo itaque molestiae delectus nisi, vero cumque quam neque excepturi. Molestiae animi, omnis officiis cum optio laudantium, temporibus molestias odio ut ullam sit accusamus, totam placeat vel hic iure eos? Omnis architecto accusamus accusantium dicta vel, ipsam eum autem quaerat sint ducimus voluptates sit recusandae commodi vero debitis pariatur aperiam enim facere, ut dolor expedita, beatae iure hic magni. Sed, eveniet. Reiciendis porro pariatur, alias magni commodi dolore repellat possimus, deleniti corporis necessitatibus rem sunt blanditiis quas quaerat consequatur voluptatibus ducimus facilis quae consequuntur adipisci fugiat! Architecto nihil officia veritatis vero aut quidem sed! Corrupti iure, accusamus fugit dolor ipsam, assumenda officiis cumque, maiores nostrum reprehenderit voluptas quis. Odit quos sequi, iste nobis perferendis in enim ab nesciunt quaerat odio quisquam provident veniam eveniet deleniti esse voluptatibus itaque sunt. Iusto corporis, amet ab magni eius aliquid maiores maxime optio fuga esse voluptas officia, quisquam dolor? Architecto, ullam placeat officiis odio minima ipsam, quibusdam, voluptatibus eveniet quaerat eaque possimus. Quaerat, ullam, temporibus unde vel expedita saepe accusamus amet distinctio eligendi pariatur ipsa doloribus velit blanditiis laborum eveniet, fuga eius maxime sequi nihil ex recusandae. Impedit vitae totam modi sint eveniet fugiat, unde possimus mollitia officiis! Doloremque saepe earum sequi accusamus praesentium ex, nulla dicta necessitatibus harum blanditiis consequuntur repudiandae aspernatur vel odit soluta veniam neque officiis rem. A ipsam dicta optio, laboriosam sequi et quia ad omnis libero dolorem odit? Modi animi saepe sed sit necessitatibus aliquam, hic repudiandae excepturi cumque odio eveniet delectus est voluptate eum id sunt. Aut alias nihil quibusdam modi, molestias quo maiores fugit, pariatur, velit voluptatum impedit officia. Quia veritatis blanditiis labore maxime earum minus. Quia corrupti consectetur nihil libero repudiandae hic tenetur tempore accusamus architecto asperiores, laboriosam fugiat voluptatem. Nisi iusto placeat dolorem in praesentium, hic exercitationem ratione aliquid magnam reprehenderit eos consequatur aliquam, nulla unde sequi quasi!</p>
+                </div> <!-- End of article container -->
+                <div class="comment-container">
+                    <h4>Comments</h4>
+                    <div class="comment">
+                        <div class="profile-picture">
+                            <img src="./assets/comment-1.jpg" alt="Profile picture of a woman">
+                        </div>
+                        <div class="individual-comment">
+                            <p>Tuesday October 9th, 2018 by Jeremy</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, nemo repellat. Exercitationem, similique. Quo dignissimos iure numquam doloremque consequatur delectus ratione dicta ab aspernatur, itaque ullam laudantium id ipsum? Tenetur officiis dignissimos quis rerum necessitatibus, deserunt at quisquam dicta itaque.</p>
+                        </div>
+                    </div> <!-- End of comment 1 -->
+                    <div class="comment">
+                        <div class="profile-picture">
+                            <img src="./assets/comment-2.jpg" alt="Profile picture of a woman">
+                        </div>
+                        <div class="individual-comment">
+                            <p>Wednesday October 10th, 2018 by Julia</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sint laboriosam laudantium doloremque porro in, totam, neque cupiditate expedita modi quia nulla distinctio ratione atque sed sapiente, molestias vitae officia.</p>
+                        </div>
+                    </div> <!-- End of comment 2 -->
+                </div> <!-- End of comment container -->
+                <form action="submit">
+                    <fieldset>
+                        <legend class="sr-only">Enter your name and email and write a comment</legend>
+                        <label for="name" class="sr-only">Enter your name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <label for="email" class="sr-only">Enter your email address</label>
+                        <input type="text" id="email" name="email" placeholder="Email address">
+                        <label for="user-comments" class="sr-only">Enter your comments</label>
+                        <textarea name="comment" id="user-comments" placeholder="Comment"></textarea>
+                        <input type="submit" value="Post Comment">
+                    </fieldset>
+                </form>
+
+            </article> <!-- End of article -->
+        </div>
+    </section> <!-- End of blog content -->
+    
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
+    
+</body>
+</html>

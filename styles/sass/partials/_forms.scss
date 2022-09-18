@@ -1,0 +1,85 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+form {
+    margin-top: 60px;
+    max-width: calc(1500px * 0.63);
+    margin-right: 10%;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+input {
+    display: block;
+    margin-bottom: 36px;
+    width: 48%;
+    padding: 12px 20px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    border: none;
+    border-bottom: 2px solid $robin;
+    text-align: left;
+    background-color: transparent;
+    color: $white;
+    font-family: $body-font;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+textarea {
+    border: 2px solid $robin;
+    resize: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 20px;
+    height: 200px;
+    font-family: $body-font;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 36px;
+    color: $white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $white;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $white;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $white;
+}
+
+input[type=submit] {
+    background-color: $spruce;
+    text-transform: uppercase;
+    color: $white;
+    cursor: pointer;
+    @include base-heading(20px, 32px);
+    letter-spacing: 1px;
+    border: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+    box-shadow: 10px 10px $robin;
+    transform: scale(0.98); 
+}
+
+input[type=submit]:focus-visible {
+    outline: 4px solid $robin;
+}
+
+

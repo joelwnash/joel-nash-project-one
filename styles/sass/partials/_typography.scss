@@ -25,6 +25,7 @@ h1 {
 
 h2 {
     @include base-heading (80px, 92px);
+    margin: 0 0 20px 40px;
 }
 
 h3 {
@@ -38,6 +39,12 @@ h4 {
     letter-spacing: 1px;
     margin-bottom: 20px;
     transition: 0.2s color;
+}
+
+h5 {
+    @include base-heading (28px, 29px);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 p {
