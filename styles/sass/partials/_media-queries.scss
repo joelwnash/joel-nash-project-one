@@ -259,18 +259,37 @@
 @media (max-width: 480px) {
     
     // General styling
-    .navbar ul li {
-        padding-left: 18px;
+    .navbar ul {
+        flex-flow: column wrap;
+        width: calc(100vw - 60px);
+        text-align: right;
+        li {
+            padding-left: 0;
+            padding-bottom: 20px;
+        }
     }
 
     // Index-specific styling
     h1 {
-        font-size: 4.8rem;
-        line-height: 4.3rem;
-        margin-top: 180px;
+        font-size: 4.4rem;
+        line-height: 3.9rem;
+        margin-top: 100px;
     }
     #intro {
         padding: 60px 0 80px 0;
+    }
+    .news-image-1, .news-image-2 {
+        width: 100%;
+        margin: 0;
+        img {
+            box-shadow: 0 20px $robin;
+        }
+    }
+    .news-text-1, .news-text-2 {
+        padding: 0 30px;
+        h4 {
+            margin-top: 20px;
+        }
     }
     #icon-links {
         padding: 20px 20px 40px;
@@ -279,7 +298,8 @@
         }
     }
     .profile-image {
-        width: 54%;
+        width: 74%;
+        margin-bottom: 60px;
         box-shadow: 20px 20px $robin;
     }
     .profile-text {
@@ -287,7 +307,14 @@
     }
     #gallery {
         padding: 0;
+        ul {
+            flex-direction: column;
+            li {
+                width: 100%;
+            }
+        }
     }
+
 
     // Blog-specific styling
     aside.blog-aside {
@@ -330,34 +357,5 @@
 
 
 
-// Mobile sizing - 360px
+// Mobile sizing - 320px
 
-@media (max-width: 360px) {
-
-    // Index-specific styling
-    .news-image-1, .news-image-2 {
-        width: 100%;
-        margin: 0;
-        img {
-            box-shadow: 0 20px $robin;
-        }
-    }
-    .news-text-1, .news-text-2 {
-        padding: 0 30px;
-        h4 {
-            margin-top: 20px;
-        }
-    }
-    .profile-image {
-        width: 74%;
-        margin-bottom: 60px;
-    }
-    
-    #gallery ul {
-        flex-direction: column;
-        li {
-            width: 100%;
-        }
-    }
-
-}

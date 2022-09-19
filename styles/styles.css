@@ -1259,16 +1259,39 @@ input[type=submit]:focus-visible {
   }
 }
 @media (max-width: 480px) {
+  .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    width: calc(100vw - 60px);
+    text-align: right;
+  }
   .navbar ul li {
-    padding-left: 18px;
+    padding-left: 0;
+    padding-bottom: 20px;
   }
   h1 {
-    font-size: 4.8rem;
-    line-height: 4.3rem;
-    margin-top: 180px;
+    font-size: 4.4rem;
+    line-height: 3.9rem;
+    margin-top: 100px;
   }
   #intro {
     padding: 60px 0 80px 0;
+  }
+  .news-image-1, .news-image-2 {
+    width: 100%;
+    margin: 0;
+  }
+  .news-image-1 img, .news-image-2 img {
+    -webkit-box-shadow: 0 20px #86E0F9;
+            box-shadow: 0 20px #86E0F9;
+  }
+  .news-text-1, .news-text-2 {
+    padding: 0 30px;
+  }
+  .news-text-1 h4, .news-text-2 h4 {
+    margin-top: 20px;
   }
   #icon-links {
     padding: 20px 20px 40px;
@@ -1277,7 +1300,8 @@ input[type=submit]:focus-visible {
     margin-bottom: -40px;
   }
   .profile-image {
-    width: 54%;
+    width: 74%;
+    margin-bottom: 60px;
     -webkit-box-shadow: 20px 20px #86E0F9;
             box-shadow: 20px 20px #86E0F9;
   }
@@ -1286,6 +1310,15 @@ input[type=submit]:focus-visible {
   }
   #gallery {
     padding: 0;
+  }
+  #gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #gallery ul li {
+    width: 100%;
   }
   aside.blog-aside {
     margin: 0;
@@ -1324,34 +1357,5 @@ input[type=submit]:focus-visible {
   }
   .contact-container form {
     padding: 30px;
-  }
-}
-@media (max-width: 360px) {
-  .news-image-1, .news-image-2 {
-    width: 100%;
-    margin: 0;
-  }
-  .news-image-1 img, .news-image-2 img {
-    -webkit-box-shadow: 0 20px #86E0F9;
-            box-shadow: 0 20px #86E0F9;
-  }
-  .news-text-1, .news-text-2 {
-    padding: 0 30px;
-  }
-  .news-text-1 h4, .news-text-2 h4 {
-    margin-top: 20px;
-  }
-  .profile-image {
-    width: 74%;
-    margin-bottom: 60px;
-  }
-  #gallery ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #gallery ul li {
-    width: 100%;
   }
 }
