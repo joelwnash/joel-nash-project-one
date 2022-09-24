@@ -430,6 +430,9 @@ header#contact {
 
 .navbar {
   padding-top: 20px;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .navbar ul {
@@ -467,6 +470,24 @@ header#contact {
 }
 .navbar a.active {
   color: #86E0F9;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 26px;
+  right: 0;
+  margin-right: 0;
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+  cursor: pointer;
+  display: none;
+}
+
+.close-icon {
+  display: none;
 }
 
 nav.nav-container {
@@ -1266,15 +1287,27 @@ input[type=submit]:focus-visible {
             flex-flow: column wrap;
     width: calc(100vw - 60px);
     text-align: right;
+    margin-top: 54px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+  .navbar ul.show-menu {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   .navbar ul li {
     padding-left: 0;
     padding-bottom: 20px;
   }
+  .hamburger-menu {
+    display: block;
+  }
   h1 {
     font-size: 4.4rem;
     line-height: 3.9rem;
-    margin-top: 100px;
+    margin-top: 60px;
   }
   #intro {
     padding: 60px 0 80px 0;

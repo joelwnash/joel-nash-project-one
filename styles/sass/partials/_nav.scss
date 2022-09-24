@@ -3,6 +3,8 @@
 
 .navbar {
     padding-top: 20px;
+    position: relative;
+    transition: all 0.2s;
 }
 
 .navbar ul {
@@ -28,6 +30,23 @@
     &.active {
         color: $robin;
     }
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 26px;
+    right: 0;
+    margin-right: 0;
+    transform: scale(150%);
+    cursor: pointer;
+    display: none;
+}
+
+.close-icon {
+    display: none;
 }
 
 nav.nav-container {
