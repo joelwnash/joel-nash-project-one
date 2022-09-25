@@ -433,6 +433,7 @@ header#contact {
   position: relative;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  overflow: hidden;
 }
 
 .navbar ul {
@@ -764,6 +765,10 @@ a.icon-link-container:hover h4, a.icon-link-container:hover p, a.icon-link-conta
 }
 #gallery ul li {
   width: 32%;
+}
+
+.slide-arrow {
+  display: none;
 }
 
 footer {
@@ -1344,14 +1349,61 @@ input[type=submit]:focus-visible {
   #gallery {
     padding: 0;
   }
-  #gallery ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  #gallery .wrapper {
+    position: relative;
+    overflow: hidden;
   }
-  #gallery ul li {
+  .slide-arrow {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    cursor: pointer;
+    -webkit-transition: 0.1s all;
+    transition: 0.1s all;
+  }
+  .slide-arrow:hover, .slide-arrow:focus {
+    background-color: white;
+    color: #0F614E;
+  }
+  #slide-arrow-previous {
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  #slide-arrow-next {
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .subtle-arrow {
+    opacity: 20%;
+    cursor: none;
+  }
+  .slides-container {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .slide-arrow {
+    display: block;
   }
   aside.blog-aside {
     margin: 0;

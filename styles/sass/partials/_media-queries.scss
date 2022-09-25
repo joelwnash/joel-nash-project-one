@@ -316,12 +316,55 @@
     }
     #gallery {
         padding: 0;
-        ul {
-            flex-direction: column;
-            li {
-                width: 100%;
-            }
+        .wrapper {
+            position: relative;
+            overflow: hidden;
         }
+    }
+    .slide-arrow {
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        cursor: pointer;
+        transition: 0.1s all;
+        &:hover, &:focus {
+            background-color: white;
+            color: $spruce;
+        }
+    }
+    #slide-arrow-previous {
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+    #slide-arrow-next {
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    .subtle-arrow {
+        opacity: 20%;
+        cursor: none;
+    }
+    .slides-container {
+        width: 100%;
+        display: flex;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    }
+    .slide {
+        width: 100%;
+        height: 100%;
+        flex: 1 0 100%;
+    }
+    .slide-arrow {
+        display: block;
     }
 
 
